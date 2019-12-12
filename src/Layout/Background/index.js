@@ -9,6 +9,7 @@ import Sideicons from '../Sideicons'
 import Homepage from '../../Pages/Home'
 import Sobrepage from '../../Pages/Sobre'
 import Resumepage from '../../Pages/Resume'
+import Trabalhospage from '../../Pages/Trabalhos'
 
 // Styles
 import { Background } from './styles' 
@@ -47,6 +48,7 @@ export default () => {
       <Route exact path='/' component={Homepage}/>
       <Route path='/sobre' component={Sobrepage}/>
       <Route path='/resumo' component={Resumepage}/>
+      <Route path='/trabalhos' component={Trabalhospage}/>
     </Background>
   )
 }
