@@ -6,9 +6,9 @@ import { FaCalendarAlt } from 'react-icons/fa'
 // Styles
 import { MainTitle, SecondTitle } from '../../Styles/typografy'
 import {MainCenteredContent,ContentBox,InfoBox} from '../../Styles/components'
-import { GridColumn2 } from '../../Styles/layout'
+import {GridColumn2,GridColumn3,Grid2Column4 } from '../../Styles/layout'
 
-import { Container } from './styles'
+import { Container, SpecificBox } from './styles'
 
 
 export default () =>
@@ -140,6 +140,81 @@ export default () =>
    
     <section className="profision">
       <SecondTitle> Minha Especialidades </SecondTitle>
+
+      <ContentBox>
+        <GridColumn3>
+          <div className="left">
+            <SpecificBox>
+              <h3>Base de Dado</h3>
+              <h3>Backend</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam sunt temporibus eum.
+              </p>
+            </SpecificBox>
+            <SpecificBox>
+              <h3>Criação de Site</h3>
+              <h3>Backend</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam sunt temporibus eum.
+              </p>
+            </SpecificBox>
+          </div>
+          <div className="middle">
+            <h2> FULLSTACK</h2>
+          </div>
+          <div className="right">
+            <SpecificBox>
+              <h3>Aplicativos para (<b>Andriod</b> e <b>IOS</b>)</h3>
+              <h3>Frontend</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam sunt temporibus eum.
+              </p>
+            </SpecificBox>
+            <SpecificBox>
+              <h3>Aplicativos Desktop (Todos sistemas operativos)</h3>
+              <h3>Backend</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam sunt temporibus eum.
+              </p>
+            </SpecificBox>
+          </div>
+        </GridColumn3>
+      </ContentBox>
+    </section>
+   
+    <section className="work">
+      <SecondTitle> Meu Processo de Trabalho </SecondTitle>
+
+      <Grid2Column4>
+        <ContentBox>
+          <h1> 001 </h1>
+          <h2> Descução de ideias </h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium saepe obcaecati quasi.
+          </p>
+        </ContentBox>
+        <ContentBox className="right">
+          <h1> 002 </h1>
+          <h2> Descução de ideias </h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium saepe obcaecati quasi.
+          </p>
+        </ContentBox>
+        <ContentBox>
+          <h1> 003 </h1>
+          <h2> Descução de ideias </h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium saepe obcaecati quasi.
+          </p>
+        </ContentBox>
+        <ContentBox className="right">
+          <h1> 004 </h1>
+          <h2> Descução de ideias </h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium saepe obcaecati quasi.
+          </p>
+        </ContentBox> 
+      </Grid2Column4>
     </section>
    </MainCenteredContent>
   </Container>

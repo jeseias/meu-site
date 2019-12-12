@@ -1,4 +1,5 @@
 import { backgrounColor } from './variables'
+import { device } from './device'
 
 // Repetead styles stay here
 export const centerContent = `
@@ -30,4 +31,16 @@ export const PageContainer = `
   * {
     overflow: hidden;
   }
+
+  /* Tablets */
+  @media ${device.tablet} {  
+    width: 100%;
+  }
 `
+
+export const GridMobileLargeMediaQuery = `
+  /* large phone */
+  @media ${device.mobileL} {  
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+}` 

@@ -108,12 +108,6 @@ export const Container = styled.div`
     }
   }
 
-
-  /* Tablets */
-  @media ${device.tablet} {  
-    width: 100%;
-  }
-
   /* large mobiles */
   @media ${device.mobileL} {  
     .me { 
