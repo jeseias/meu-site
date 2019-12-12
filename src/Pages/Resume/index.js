@@ -14,7 +14,7 @@ import { Container } from './styles'
 export default () =>
   <Container>
    <MainCenteredContent marginTop='4rem' width='80%'>
-     <section className="knowledge">
+    <section className="knowledge">
        <MainTitle> Resumo <div id="infinity"></div> </MainTitle>
 
         <GridColumn2>
@@ -103,9 +103,43 @@ export default () =>
         <SecondTitle> Habilidades </SecondTitle>
 
         <GridColumn2>
-          <ContentBox></ContentBox>
-          <ContentBox></ContentBox>
+          <ContentBox>
+            <div className="progress">
+              <progress value="97" max="100" />
+              <span> HTML5 97% </span>
+            </div>
+            <div className="progress">
+              <progress value="71" max="100" />
+              <span> JavaScript 71% </span>
+            </div>  
+            <div className="progress">
+              <progress value="83" max="100" />
+              <span> CSS3 83% </span>
+            </div>
+            <div className="progress">
+              <progress value="63" max="100" />
+              <span> ReactJS 63% </span>
+            </div>
+          </ContentBox>
+          <ContentBox>
+            <div className="progress">
+              <progress value="74" max="100" />
+              <span> NodeJS 74% </span>
+            </div>
+            <div className="progress">
+              <progress value="61" max="100" />
+              <span> MongoDB 61% </span>
+            </div>
+            <div className="progress">
+              <progress value="74" max="100" />
+              <span> NodeJS 74% </span>
+            </div>
+          </ContentBox>
         </GridColumn2>
       </section>
+   
+    <section className="profision">
+      <SecondTitle> Minha Especialidades </SecondTitle>
+    </section>
    </MainCenteredContent>
   </Container>
