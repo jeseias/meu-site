@@ -12,7 +12,9 @@ export const GridColumn2 = styled.div`
 export const GridColumn3 =  styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
   grid-gap: 1em;
+  padding-top: 3rem;
   ${GridMobileLargeMediaQuery};
 `
 

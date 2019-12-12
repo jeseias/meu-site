@@ -14,9 +14,8 @@ export default () =>
       <section className="trabalhos">
         <MainTitle> Meus Trabalhos <div id="infinity"></div> </MainTitle>
         
-        <ContentBox>
-          <SwitchFilter />
-        </ContentBox>
+        
+        <SwitchFilter /> 
       </section>
     </MainCenteredContent>
   </Container>
