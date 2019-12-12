@@ -1,8 +1,11 @@
 import React from 'react';
 
+// Import
+import SwitchFilter from '../../Components/SwitchFilter'
+
 // Styles
 import {MainCenteredContent,ContentBox} from '../../Styles/components'
-import { MainTitle, SecondTitle } from '../../Styles/typografy'
+import { MainTitle } from '../../Styles/typografy'
 import { Container } from './styles'
 
 export default () =>  
@@ -10,6 +13,10 @@ export default () =>
     <MainCenteredContent marginTop='4rem' width='80%'>
       <section className="trabalhos">
         <MainTitle> Meus Trabalhos <div id="infinity"></div> </MainTitle>
+        
+        <ContentBox>
+          <SwitchFilter />
+        </ContentBox>
       </section>
     </MainCenteredContent>
   </Container>
