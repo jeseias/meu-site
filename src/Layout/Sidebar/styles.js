@@ -104,4 +104,12 @@ export const Menu = styled.div`
       ${centerContent}
     }
   }
+
+  @media ${device.mobileL} {   
+
+    .bars {
+      ${positionAbsoluteCenter(2.7, 94)}; 
+      ${centerContent}
+    }
+  }
 `

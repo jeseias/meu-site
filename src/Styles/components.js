@@ -154,3 +154,51 @@ export const MainCenteredContent = styled.div`
     width: 99%;
   }
 `
+
+export const InfoBox = styled.div`
+  position: relative;
+  width: 100%;
+  display: block;
+
+  *:not(before) {
+    padding-left: 2rem;
+  }
+  
+  h2 {
+    color: #fff;
+    margin-bottom: .4rem;
+  }
+
+  span {
+    color: ${tertiaryColor};
+    display: block;
+    margin-bottom: 1rem;  
+    ${centerContent}  
+    justify-content: flex-start;
+    flex-direction: row;
+
+    svg {
+      padding: 0;
+    }
+  }
+
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2%;
+    height: 100%;
+    border: 3px solid ${tertiaryColor};
+    margin-right: 2rem;
+    ${smoothTransition};
+    border-radius: 2rem;
+  } 
+
+  &:hover {
+    &::before {
+    background: ${tertiaryColor}
+  }
+  }
+`

@@ -1,6 +1,5 @@
 import styled from 'styled-components'
 
-import { device } from './device'
 import { tertiaryColor } from './variables'
 
 export const MainTitle = styled.h1`
@@ -38,11 +37,7 @@ export const MainTitle = styled.h1`
       right: 0;
       border-radius: 50px 50px 50px 0;
       transform: rotate(45deg);
-    }
-
-    @media ${device.mobileL} {   
-      font-size: .4rem;
-    }
+    } 
   
 `
 

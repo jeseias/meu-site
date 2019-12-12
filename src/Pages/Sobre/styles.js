@@ -3,20 +3,10 @@ import styled from 'styled-components';
 import { device } from '../../Styles/device'
 
 import { backgrounColor, tertiaryColor } from '../../Styles/variables' 
-import { smoothTransition, centerContent } from '../../Styles/mixins' 
+import { smoothTransition, centerContent, PageContainer } from '../../Styles/mixins' 
 
 export const Container = styled.div` 
-  width: 90%; 
-  position: absolute;
-  top: 0;
-  right: 0; 
-  z-index: 1;
-  background: ${backgrounColor};  
-  overflow-y: sroll;
-
-  * {
-    overflow: hidden;
-  }
+  ${PageContainer}
 
   /* About me section */
   .me {

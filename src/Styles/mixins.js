@@ -1,3 +1,5 @@
+import { backgrounColor } from './variables'
+
 // Repetead styles stay here
 export const centerContent = `
   display: flex;
@@ -13,4 +15,19 @@ export const positionAbsoluteCenter = (t, l) => `
   top: ${t}%;
   left: ${l}%;
   transform: translate(-50%, -50%); 
+`
+
+export const PageContainer = `
+  width: 90%; 
+  min-height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0; 
+  z-index: 1;
+  background: ${backgrounColor};  
+  overflow-y: sroll; 
+
+  * {
+    overflow: hidden;
+  }
 `

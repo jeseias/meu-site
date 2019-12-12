@@ -39,7 +39,7 @@ export const TitleCenter = styled.h1`
     text-align: center; 
     font-size: 3rem;
 
-    h2 {
+    .h2 {
       font-size: 1.2rem;
       padding: 0;
       text-align: center;
@@ -49,7 +49,7 @@ export const TitleCenter = styled.h1`
   @media ${device.mobileL} {   
     font-size: 2rem;
 
-    h2 {
+    .h2 {
       font-size: 1rem;
       padding: 0;
       text-align: center;
