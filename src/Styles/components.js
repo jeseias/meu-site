@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { device } from './device'
 
 import { primaryColor, tertiaryColor, backgrounColor, lightGray } from './variables'
-import { smoothTransition, centerContent } from './mixins'
+import { smoothTransition, centerContent, FormElements } from './mixins'
 
 export const ContentBox = styled.div`
   background: ${primaryColor};
@@ -78,6 +78,7 @@ export const AwesomeBTN = styled.button`
   border: none;
   border-left: .2rem solid none;
   border-bottom: .2rem solid ${tertiaryColor};
+  padding: .3rem 1rem;
   ${smoothTransition};
 
   &:hover {
@@ -201,4 +202,14 @@ export const InfoBox = styled.div`
     background: ${tertiaryColor}
   }
   }
+`
+
+export const FormInput = styled.input`
+  ${FormElements};
+`
+
+export const FormArea = styled.textarea`
+  ${FormElements};
+  min-height: 200px;
+  margin-top: 2rem;
 `

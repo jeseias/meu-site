@@ -1,5 +1,6 @@
 import { backgrounColor } from './variables'
 import { device } from './device'
+import { darkGray, tertiaryColor } from './variables'
 
 // Repetead styles stay here
 export const centerContent = `
@@ -7,6 +8,11 @@ export const centerContent = `
   justify-content: center;
   align-items: center;
   flex-direction: column;
+`
+
+export const CenterElement = `
+  display: block;
+  margin: 1rem auto;
 `
 
 export const smoothTransition =  `transition: All ease-in-out .3s`
@@ -44,3 +50,20 @@ export const GridMobileLargeMediaQuery = `
     grid-template-columns: 1fr;
     grid-template-rows: auto;
 }` 
+
+export const FormElements = `
+  background: transparent;
+  padding: .5rem 1rem;
+  border: none;
+  border-bottom: 2px solid ${darkGray};
+  font-size: 1.3rem;
+  outline: none;
+  color: #fff;
+  ${smoothTransition};
+  margin-bottom: 1rem;
+  width: 100%;
+
+  &:focus {
+    border-color: ${tertiaryColor}
+  }
+`

@@ -10,6 +10,7 @@ import Homepage from '../../Pages/Home'
 import Sobrepage from '../../Pages/Sobre'
 import Resumepage from '../../Pages/Resume'
 import Trabalhospage from '../../Pages/Trabalhos'
+import Contactpage from '../../Pages/Contacto'
 
 // Styles
 import { Background } from './styles' 
@@ -49,6 +50,7 @@ export default () => {
       <Route path='/sobre' component={Sobrepage}/>
       <Route path='/resumo' component={Resumepage}/>
       <Route path='/trabalhos' component={Trabalhospage}/>
+      <Route path='/contacto' component={Contactpage}/>
     </Background>
   )
 }
