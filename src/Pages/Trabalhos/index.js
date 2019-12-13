@@ -4,7 +4,7 @@ import React from 'react';
 import SwitchFilter from '../../Components/SwitchFilter'
 
 // Styles
-import {MainCenteredContent,ContentBox} from '../../Styles/components'
+import {MainCenteredContent} from '../../Styles/components'
 import { MainTitle } from '../../Styles/typografy'
 import { Container } from './styles'
 

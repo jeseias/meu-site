@@ -6,7 +6,7 @@ import { ContentBox } from '../../Styles/components'
 import { Container, Filter, FilterItem } from './styles'
 
 export default () => {
-  const [items, setItems] = useState([
+  const [items] = useState([
     { name: 'All', active: true },
     { name: 'Sites', active: false },
     { name: 'Telefone', active: false },
