@@ -9,7 +9,7 @@ export const TitleCenter = styled.h1`
   color: #fff; 
   z-index: 1;
   text-transform: uppercase;  
-  overflow: hidden;
+  overflow: hidden !important;
 
   .h2 {
     font-size: 1.5rem; 
@@ -33,8 +33,7 @@ export const TitleCenter = styled.h1`
     text-align: center;
   }
 
-  @media ${device.tablet} { 
-    ${positionAbsoluteCenter(48, 50)}; 
+  @media ${device.tablet} {  
     min-width: 450px;
     text-align: center; 
     font-size: 3rem;

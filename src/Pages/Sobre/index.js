@@ -4,6 +4,7 @@ import React from 'react'
 
 // Styled
 import { MainTitle, SecondTitle } from '../../Styles/typografy'
+import { GridColumn4 } from '../../Styles/layout'
 import {ContentBox,Tags,AwesomeBTN,Servicebox,Slider,TestimonialBox,MainCenteredContent} from '../../Styles/components'
 import { Container } from './styles'
 
@@ -45,36 +46,38 @@ export default () =>
             </p>
           </div>
           <div className="group">
-            <Tags>
-              <div className="icon">
-                <FaAward size={50}/>
-              </div>
-              <div className="details">
-                <p>4 Anos de trabalhos</p>
-                <span>Experiença</span>
-              </div>
-            </Tags>
-            <Tags>
-              <div className="icon">
-                <FaCertificate size={50}/> 
-              </div>
-              <div className="details">
-                <p>11 + Projectos</p>
-                <span>Completados</span>
-              </div>
-            </Tags>
-            <Tags>
-              <div className="icon">
-                <FaUserAstronaut size={50}/>
-              </div>
-              <div className="details">
-                <p>trabalhador autonomo</p>
-                <span>Disponivel</span>
-              </div>
-            </Tags>
-            <AwesomeBTN>
-              Entre em Contacto
-            </AwesomeBTN>
+            <GridColumn4> 
+              <Tags>
+                <div className="icon">
+                  <FaAward size={50}/>
+                </div>
+                <div className="details">
+                  <p>4 Anos de trabalhos</p>
+                  <span>Experiença</span>
+                </div>
+              </Tags>
+              <Tags>
+                <div className="icon">
+                  <FaCertificate size={50}/> 
+                </div>
+                <div className="details">
+                  <p>11 + Projectos</p>
+                  <span>Completados</span>
+                </div>
+              </Tags>
+              <Tags>
+                <div className="icon">
+                  <FaUserAstronaut size={50}/>
+                </div>
+                <div className="details">
+                  <p>trabalhador autonomo</p>
+                  <span>Disponivel</span>
+                </div>
+              </Tags>
+              <AwesomeBTN>
+                Entre em Contacto
+              </AwesomeBTN>
+            </GridColumn4>
           </div>
         </ContentBox>
       </section>

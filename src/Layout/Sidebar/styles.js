@@ -7,7 +7,7 @@ import { device } from '../../Styles/device'
 
 export const Sidebar = styled.aside`
   width: 10%;
-  min-height: 100vh;
+  min-height: 100%;
   background: rgba(0,0,0, .4);
   display: grid;
   grid-template-columns: 1fr;
@@ -84,8 +84,7 @@ export const Sidebar = styled.aside`
 `;
 
 export const Menu = styled.div`
-  display: none;
-  position: relative;
+  display: none;  
 
   @media ${device.tablet} {   
     display: block;
@@ -99,8 +98,10 @@ export const Menu = styled.div`
     text-align: center;
     z-index: 100;
 
-    .bars {
-      ${positionAbsoluteCenter(3.5, 91)}; 
+    .bars { 
+      position: fixed;
+      top: 8px;
+      right: 22px;
       ${centerContent}
     }
   }
@@ -108,7 +109,7 @@ export const Menu = styled.div`
   @media ${device.mobileL} {   
 
     .bars {
-      ${positionAbsoluteCenter(2.7, 94)}; 
+      ${positionAbsoluteCenter(2.9, 94)}; 
       ${centerContent}
     }
   }

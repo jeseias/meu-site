@@ -18,7 +18,7 @@ export const CenterElement = `
 export const smoothTransition =  `transition: All ease-in-out .3s`
 
 export const positionAbsoluteCenter = (t, l) => `
-  position: absolute;
+  position: fixed;
   top: ${t}%;
   left: ${l}%;
   transform: translate(-50%, -50%); 

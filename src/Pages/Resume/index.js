@@ -183,7 +183,7 @@ export default () =>
     </section>
    
     <section className="work">
-      <SecondTitle> Meu Processo de Trabalho </SecondTitle>
+      <SecondTitle> Como Trabalho </SecondTitle>
 
       <Grid2Column4>
         <ContentBox>

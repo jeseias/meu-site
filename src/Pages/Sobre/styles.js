@@ -54,11 +54,7 @@ export const Container = styled.div`
     } 
 
     .group {
-      grid-area: group;
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr; 
-      display: flex;
-      flex-direction: row;
+      grid-area: group; 
     }
 
   }
