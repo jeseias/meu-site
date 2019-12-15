@@ -16,8 +16,8 @@ export const Container = styled.div`
       margin-bottom: 2rem;
 
       span { 
-        position: absolute;
         ${positionAbsoluteCenter(50,50)};
+        position: absolute;
         display: block;
         font-size: 1rem; 
         color: ${darkGray}; 

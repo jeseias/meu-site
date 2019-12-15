@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
-import { tertiaryColor, lightGray, backgrounColor } from '../../Styles/variables'
+import { tertiaryColor, lightGray } from '../../Styles/variables'
+import { smoothTransition } from '../../Styles/mixins'
 
 export const Container = styled.div`
    .filterbox{
@@ -26,9 +27,17 @@ export const FilterItem = styled.div`
   text-align: center;
   border-radius: 2rem;
   padding: .2rem;
+  ${smoothTransition};
   
   &.active {
-    background: ${tertiaryColor};
-    color: ${backgrounColor};
+    background: ${tertiaryColor}; 
+
+    &:hover {
+      background: ${tertiaryColor}
+    }
+  } 
+
+  &:hover {
+    cursor: pointer; 
   }
 `

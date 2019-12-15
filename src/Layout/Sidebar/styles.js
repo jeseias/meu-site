@@ -15,7 +15,7 @@ export const Sidebar = styled.aside`
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 100; 
+  z-index: 100;  
 
   *:not(main) {
     ${centerContent}
@@ -74,7 +74,9 @@ export const Sidebar = styled.aside`
     transform: translateX(-110%); 
     background: ${secondaryColor};
     width: 55px;
-    ${smoothTransition}
+    ${smoothTransition};
+    z-index: 100; 
+    overflow-y: scroll;
 
     &.show {
       transform: translateX(0);
