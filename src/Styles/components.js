@@ -9,6 +9,7 @@ export const ContentBox = styled.div`
   background: ${primaryColor};
   border-radius: 2rem;
   padding: 2rem;
+  position: relative;
   ${smoothTransition};
 
   &:hover {

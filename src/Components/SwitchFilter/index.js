@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 
+// components
+import Modal from '../Modal'
+
 // Styles
 import { GridColumn3 } from '../../Styles/layout' 
 import { ContentBox } from '../../Styles/components' 
@@ -13,6 +16,7 @@ export default () => {
     { name: 'Computador', active: false }
   ])
 
+  // This function switches the menus tabs
   const handleItems = name => {
     const newItems = items.map( item => {
       if( item.name === name)
@@ -31,9 +35,15 @@ export default () => {
         )}</Filter>
       </div>
       <GridColumn3>
-        <ContentBox></ContentBox>
-        <ContentBox></ContentBox>
-        <ContentBox></ContentBox>
+        <ContentBox>
+          <Modal></Modal>
+        </ContentBox>
+        <ContentBox>
+          <Modal></Modal>
+        </ContentBox>
+        <ContentBox>
+          <Modal></Modal>
+        </ContentBox>
       </GridColumn3>
     </Container> 
   )
