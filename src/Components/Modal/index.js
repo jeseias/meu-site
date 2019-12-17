@@ -4,7 +4,7 @@ import React from 'react';
 import { MdImage, MdWebAsset, MdVideocam, MdSmartphone, MdDesktopMac } from 'react-icons/md'
 
 // Styles
-import { ModalBox, ImageShowBox } from './styles'
+import { ModalBox } from './styles'
 
 export default ({ work }) => {
 
@@ -40,10 +40,7 @@ return (
       <div className="what">#{work.what}</div> 
       { switchIcons(work) } 
     </div>  
-  </ModalBox> 
-  <ImageShowBox>
-
-  </ImageShowBox>
+  </ModalBox>  
 </>
 )
 }
