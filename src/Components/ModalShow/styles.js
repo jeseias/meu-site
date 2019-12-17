@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 import { smoothTransition } from '../../Styles/mixins'
 import { tertiaryColor } from '../../Styles/variables'
+import { device } from '../../Styles/device'
 
 export const Container = styled.div`
   display: ${props => props.item ? 'block' : 'none'};
@@ -53,5 +54,22 @@ export const Container = styled.div`
       }
     }
 
+  }
+
+  /* Tablets styles */
+  @media ${device.tablet} { 
+    section {
+      max-width: 60%;
+      width: 100%; 
+      height: 300px;
+    } 
+  }
+
+  @media ${device.mobileL} { 
+    section {
+      max-width: 80%;
+      width: 100%; 
+      height: 400px;
+    } 
   }
 `;

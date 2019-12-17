@@ -21,6 +21,10 @@ export const GridColumn3 =  styled.div`
   grid-gap: 1em;
   padding-top: 3rem;
   ${GridMobileLargeMediaQuery};
+
+  @media ${device.tablet} {   
+    grid-gap: 0; 
+  }
 `
 
 export const GridColumn4 =  styled.div`

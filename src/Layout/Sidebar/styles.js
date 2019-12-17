@@ -83,6 +83,22 @@ export const Sidebar = styled.aside`
     }
   }
 
+  @media ${device.mobileL} {   
+    overflow: visible;
+    main {
+
+      ul {
+
+        a {
+
+          span {
+            left: 2px;
+          }
+        }
+      }
+    }
+  }
+
 `;
 
 export const Menu = styled.div`
