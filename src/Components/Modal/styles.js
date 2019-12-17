@@ -1,13 +1,14 @@
 import styled from 'styled-components';
 
 import { smoothTransition, positionAbsoluteCenter } from '../../Styles/mixins'
-import { transparentTertiaryColor } from '../../Styles/variables'
+import { transparentTertiaryColor, lightGray } from '../../Styles/variables'
 
 export const ModalBox = styled.div`
   position: relative;
   background: ${ props => `url(${props.item.item})` };  
-  height: 400px;
-  width: 500px;
+  background-size: cover;
+  background-position: center;
+  min-height: 300px; 
 
   * {
     ${smoothTransition};
@@ -22,7 +23,7 @@ export const ModalBox = styled.div`
     color: #fff; 
     
     h2 {
-      ${positionAbsoluteCenter(56,50)};
+      ${positionAbsoluteCenter(56,60)};
       transition-delay: .3s;
       position: absolute;
       font-size: 2rem;
@@ -52,22 +53,38 @@ export const ModalBox = styled.div`
       background: ${transparentTertiaryColor};
 
       h2 {
-        ${positionAbsoluteCenter(50,40)};
+        ${positionAbsoluteCenter(50,50)};
         position: absolute;
         transition-delay: 0;
         opacity: 1;
       }
 
       .what, .icon {
-        ${positionAbsoluteCenter(89,10)};
+        ${positionAbsoluteCenter(89,14)};
         position: absolute;
         opacity: 1;
       }
 
       .icon {
-        ${positionAbsoluteCenter(90,75)}; 
+        ${positionAbsoluteCenter(90,90)}; 
         position: absolute;
       }
     }
   }
 `;
+
+export const ImageShowBox = styled.div`
+  ${positionAbsoluteCenter(0,0)};
+  width: 100%;
+  height: 100%;
+  background: #12171b;
+  z-index: 100;
+
+  .main {
+    ${positionAbsoluteCenter(50,50)};
+    width: 100%;
+    max-width: 500px;
+    min-height: 200px;
+    background: ${lightGray};
+  }
+`

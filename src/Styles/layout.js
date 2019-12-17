@@ -1,12 +1,17 @@
 import styled from 'styled-components'
 
 import { GridMobileLargeMediaQuery } from './mixins'
+import { device } from './device'
 
 export const GridColumn2 = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 2rem;
   ${GridMobileLargeMediaQuery};
+
+  @media ${device.tablet} {   
+    grid-gap: 5px; 
+  }
 `
 
 export const GridColumn3 =  styled.div`

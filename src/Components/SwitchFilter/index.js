@@ -1,11 +1,6 @@
 import React, { useState } from 'react';
 
-// components
-import Modal from '../Modal'
-
-// Styles
-import { GridColumn3 } from '../../Styles/layout' 
-import { ContentBox } from '../../Styles/components' 
+// Styles  
 import { Container, Filter, FilterItem } from './styles'
 
 export default () => {
@@ -17,15 +12,14 @@ export default () => {
   ])
 
   // This function switches the menus tabs
-  const handleItems = name => {
+  const handleItems = name => { 
     const newItems = items.map( item => {
       if( item.name === name)
-        return {...item, active: true} 
-        return {...item, active: false}
+      return {...item, active: true} 
+      return {...item, active: false}
     })
-
-    setItem(newItems)
-  }
+    setItem(newItems) 
+  } 
 
   return ( 
     <Container>
@@ -33,18 +27,7 @@ export default () => {
         <Filter>{items.map( ({name, active}) => 
           <FilterItem key={name}className={active ? 'active' : ''} onClick={() => handleItems(name)}>{name}</FilterItem>
         )}</Filter>
-      </div>
-      <GridColumn3>
-        <ContentBox>
-          <Modal></Modal>
-        </ContentBox>
-        <ContentBox>
-          <Modal></Modal>
-        </ContentBox>
-        <ContentBox>
-          <Modal></Modal>
-        </ContentBox>
-      </GridColumn3>
+      </div> 
     </Container> 
   )
 }

@@ -4,9 +4,9 @@ import React from 'react';
 import { MdImage, MdWebAsset, MdVideocam, MdSmartphone, MdDesktopMac } from 'react-icons/md'
 
 // Styles
-import { ModalBox } from './styles'
+import { ModalBox, ImageShowBox } from './styles'
 
-export default () => {
+export default ({ work }) => {
 
   const img = <MdImage size={26} className="icon"/>,
         web = <MdWebAsset size={26} className="icon"/>,
@@ -16,17 +16,9 @@ export default () => {
 
   const icons = [img, web, video, phone, desktop]
 
-  const work = {
-    id: 1,
-    type: "img",
-    name: "Meu Site",
-    what: "Site",
-    item: "https://picsum.photos/id/1/500/400"
-  }
-
   // This chooses which icon to display
   const switchIcons = el => {
-    switch (el.what) {
+    switch (el.type) {
       case "Site":
           return icons[1] 
       case "Video":
@@ -40,13 +32,18 @@ export default () => {
     } 
   }
 
-return (
-  <ModalBox item={work}>  
-    <div className="details">
+return ( 
+<>
+  <ModalBox item={work} className="Modals">  
+    <div className="details">  
       <h2 className="name">{work.name}</h2>
       <div className="what">#{work.what}</div> 
       { switchIcons(work) } 
-    </div>
-  </ModalBox>
+    </div>  
+  </ModalBox> 
+  <ImageShowBox>
+
+  </ImageShowBox>
+</>
 )
 }
