@@ -2,11 +2,11 @@ import React from 'react';
 
 // Icons 
 import { MdImage, MdWebAsset, MdVideocam, MdSmartphone, MdDesktopMac } from 'react-icons/md'
-
+ 
 // Styles
 import { ModalBox } from './styles'
 
-export default ({ work }) => {
+export default ({ work, showElement }) => {
 
   const img = <MdImage size={26} className="icon"/>,
         web = <MdWebAsset size={26} className="icon"/>,
@@ -32,15 +32,13 @@ export default ({ work }) => {
     } 
   }
 
-return ( 
-<>
-  <ModalBox item={work} className="Modals">  
+return (  
+  <ModalBox item={work} className="Modals" onClick={() => showElement(work)}>  
     <div className="details">  
       <h2 className="name">{work.name}</h2>
       <div className="what">#{work.what}</div> 
       { switchIcons(work) } 
-    </div>  
-  </ModalBox>  
-</>
+    </div>   
+  </ModalBox>   
 )
 }

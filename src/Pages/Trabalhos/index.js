@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 // Component
 import SwitchFilter from '../../Components/SwitchFilter'
@@ -8,12 +8,34 @@ import Modal from '../../Components/Modal'
 import { GridColumn3 } from '../../Styles/layout' 
 import { ContentBox } from '../../Styles/components' 
 
+// Components
+import ModalShow from '../../Components/ModalShow'
+
 // Styles
 import {MainCenteredContent} from '../../Styles/components'
 import { MainTitle } from '../../Styles/typografy'
 import { Container } from './styles'
 
 export default () =>  {
+  const [display, setDisplay] = useState(false)
+  const [content, setContent] = useState({})
+  const [works, setWorks] = useState([])
+  const [items, setItem] = useState([
+    { name: 'All', active: true },
+    { name: 'Sites', active: false },
+    { name: 'Telefone', active: false },
+    { name: 'Computador', active: false }
+  ])
+
+  // This function switches the menus tabs
+  const handleItems = name => { 
+    const newItems = items.map( item => {
+      if( item.name === name)
+      return {...item, active: true} 
+      return {...item, active: false}
+    })
+    setItem(newItems) 
+  }
 
   const work = [{
     id: 1,
@@ -73,19 +95,28 @@ export default () =>  {
     link: "#"
   }]
 
+  const showModal = el => {
+    setDisplay(!display) 
+    setContent(el)
+  }
+
+  const fitlerWorks = els => {
+    setWorks(els)
+  }
+
 return ( 
   <Container>
     <MainCenteredContent marginTop='4rem' width='90%'>
       <section className="trabalhos">
-        <MainTitle> Meus Trabalhos <div id="infinity"></div> </MainTitle>
+        <MainTitle> Meus Trabalhos <div id="infinity"></div> </MainTitle> 
         
-        
-        <SwitchFilter /> 
+        <SwitchFilter handleItems={(els) => handleItems(els)} items={items}/> 
+        <ModalShow content={content} display={display} showElement={(el) => showModal(el)}/>
 
         <GridColumn3>
           { work.map( item => 
             <ContentBox key={item.id}>
-              <Modal work={item}/>
+              <Modal work={item} showElement={el => showModal(el)}/>
             </ContentBox> 
           ) }
         </GridColumn3>

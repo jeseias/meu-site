@@ -1,20 +1,57 @@
-import styled from 'styled-components';
+import styled from 'styled-components'; 
 
-import { positionAbsoluteCenter } from '../../Styles/mixins'
-import { lightGray } from '../../Styles/variables'
+import { smoothTransition } from '../../Styles/mixins'
+import { tertiaryColor } from '../../Styles/variables'
 
 export const Container = styled.div`
-  ${positionAbsoluteCenter(0,0)};
+  display: ${props => props.item ? 'block' : 'none'};
+  position: fixed;
   width: 100%;
   height: 100%;
-  background: #12171b;
-  z-index: 100;
+  top: 0;
+  left: 0;
+  background: #12171b99; 
+  z-index: 100;  
 
-  .main {
-    ${positionAbsoluteCenter(50,50)};
-    width: 100%;
-    max-width: 500px;
-    min-height: 200px;
-    background: ${lightGray};
+  
+  section {
+    margin: 15rem auto;
+    max-width: 700px;
+    width: 100%; 
+    height: 500px;
+    background: ${props => `url(${props.img})` };  
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+    position: relative; 
+    overflow: visible;
+
+    .close {
+      position: absolute; 
+      color: #fff; 
+      top: -3rem;
+      right: 0rem; 
+      ${smoothTransition};
+
+      &:hover {
+        color: ${tertiaryColor};
+        cursor: pointer;
+      }
+    }
+
+    a {
+      position: absolute; 
+      color: #fff; 
+      bottom: -2rem;
+      right: 0rem; 
+      ${smoothTransition};
+      text-decoration: underline;
+
+      &:hover {
+        color: ${tertiaryColor};
+        cursor: pointer;
+      }
+    }
+
   }
 `;
