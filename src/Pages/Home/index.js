@@ -3,9 +3,10 @@ import React, { useEffect, useState } from 'react';
 import { TitleCenter } from './styles'
 
 const words = [
-  'Freenlancer',
+  'Trabalhador Autonomo',
   'Desenvolverdor Web',
-  'Designer'
+  'Criador Mobile',
+  'Criador Desktop'
 ]
 
 export default () => {
