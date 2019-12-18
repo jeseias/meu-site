@@ -139,7 +139,7 @@ export default () =>
       </section>
    
     <section className="profision">
-      <SecondTitle> Minha Especialidades </SecondTitle>
+      <SecondTitle> Especialidades </SecondTitle>
 
       <ContentBox>
         <GridColumn3>

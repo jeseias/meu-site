@@ -67,7 +67,7 @@ export const Container = styled.div`
 
   @media ${device.mobileL} { 
     section {
-      max-width: 80%;
+      max-width: 95%;
       width: 100%; 
       height: 400px;
     } 

@@ -21,7 +21,7 @@ export const Container = styled.div`
       ${centerContent};
       text-align: center;
 
-      h3 {
+      h4 {
         color: ${tertiaryColor};
       }
 

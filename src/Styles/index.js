@@ -1,5 +1,8 @@
 import { createGlobalStyle } from 'styled-components'
 
+import { tertiaryColor, darkGray } from './variables'
+import { centerContent, positionAbsoluteCenter } from './mixins'
+
 
 export const GlobalStyles = createGlobalStyle`
 
@@ -29,5 +32,33 @@ export const GlobalStyles = createGlobalStyle`
     color: #fff;
     text-decoration: none;
   }  
+
+  .progress {
+      width: 100%;
+      ${centerContent}
+      position: relative;
+      margin-bottom: 2rem;
+
+      span { 
+        ${positionAbsoluteCenter(50,50)};
+        position: absolute;
+        display: block;
+        font-size: 1rem; 
+        color: ${darkGray}; 
+      }
+      progress {
+        border-radius: 2px; 
+        width: 100%;
+        height: 22px; 
+      }
+      progress::-webkit-progress-bar {
+        background-color: #f4f4f4;
+        border-radius: 2px; 
+      }
+      progress::-webkit-progress-value {
+        border-radius: 2px; 
+        background: ${tertiaryColor};
+      } 
+    }
 `
 

@@ -9,33 +9,7 @@ export const Container = styled.div`
 
   /* My skills section */
   .skill {
-    .progress {
-      width: 100%;
-      ${centerContent}
-      position: relative;
-      margin-bottom: 2rem;
-
-      span { 
-        ${positionAbsoluteCenter(50,50)};
-        position: absolute;
-        display: block;
-        font-size: 1rem; 
-        color: ${darkGray}; 
-      }
-      progress {
-        border-radius: 2px; 
-        width: 100%;
-        height: 22px; 
-      }
-      progress::-webkit-progress-bar {
-        background-color: #f4f4f4;
-        border-radius: 2px; 
-      }
-      progress::-webkit-progress-value {
-        border-radius: 2px; 
-        background: ${tertiaryColor};
-      } 
-    }
+    
   }
 
   /* Minha sespecializacao section */

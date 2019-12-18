@@ -18,7 +18,7 @@ export const GridColumn3 =  styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
-  grid-gap: 1em;
+  grid-gap: .5em;
   padding-top: 3rem;
   ${GridMobileLargeMediaQuery};
 

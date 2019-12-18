@@ -35,17 +35,17 @@ export default () =>
           <GridColumn3>
             <div>
               <FaPaperPlane size={30}/>
-              <h3>jeseiasdomingos@outlook.com</h3>
+              <h4>jeseiasdomingos@outlook.com</h4>
               <span>email</span>
             </div>
             <div>
               <MdLocationOn size={30}/>
-              <h3> Sequle Luanda, Angola </h3>
+              <h4> Sequle Luanda, Angola </h4>
               <span> Localidade </span>
             </div>
             <div> 
               <FaPhone size={30}/>
-              <h3> 936516269 </h3>
+              <h4> 936516269 </h4>
               <span> Telefone </span>
             </div>
           </GridColumn3>

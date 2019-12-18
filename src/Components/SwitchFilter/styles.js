@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 import { tertiaryColor, lightGray } from '../../Styles/variables'
 import { smoothTransition } from '../../Styles/mixins'
+import { device } from '../../Styles/device'
 
 export const Container = styled.div`
    .filterbox{
@@ -20,6 +21,10 @@ export const Filter = styled.div`
   max-width: 700px;
   padding: 1rem;
   grid-gap: 1rem;
+
+  @media ${device.mobileM} {
+    grid-gap: .2rem;
+  }
 `
 
 export const FilterItem = styled.div`

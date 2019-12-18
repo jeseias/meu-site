@@ -19,7 +19,7 @@ import {MdSmartphone} from 'react-icons/md'
 
 export default () =>  
   <Container>
-    <MainCenteredContent marginTop='4rem' width='80%'>
+    <MainCenteredContent marginTop='4rem' width='90%'>
       <section className="aboutMe">
         <MainTitle>
           Sobre Me 
@@ -213,8 +213,9 @@ export default () =>
                   <h3 className="name"> Zacarias Chitunda </h3>
                   <p> Empresario </p>
                 </div>
-                <div className="progressbar">
-                  <progress value="82" max="100" /> 
+                <div className="progress">
+                  <progress value="93" max="100" />
+                  <span> 93% </span>
                 </div>
               </header>
               <main>
@@ -233,8 +234,9 @@ export default () =>
                   <h3 className="name"> Evaristo Bumba </h3>
                   <p> Gerente </p>
                 </div>
-                <div className="progressbar">
-                  <progress value="76" max="100" /> 
+                <div className="progress">
+                  <progress value="81" max="100" />
+                  <span> 81% </span>
                 </div>
               </header>
               <main>
@@ -253,8 +255,9 @@ export default () =>
                   <h3 className="name"> Zacarias Chitunda </h3>
                   <p> Empresario </p>
                 </div>
-                <div className="progressbar">
-                  <progress value="82" max="100" /> 
+                <div className="progress">
+                  <progress value="90" max="100" />
+                  <span> 90% </span>
                 </div>
               </header>
               <main>
@@ -273,8 +276,9 @@ export default () =>
                   <h3 className="name"> Evaristo Bumba </h3>
                   <p> Gerente </p>
                 </div>
-                <div className="progressbar">
-                  <progress value="76" max="100" /> 
+                <div className="progress">
+                  <progress value="76" max="100" />
+                  <span> 76% </span>
                 </div>
               </header>
               <main>
