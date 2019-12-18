@@ -5,8 +5,8 @@ import { TitleCenter } from './styles'
 const words = [
   'Trabalhador Autonomo',
   'Desenvolverdor Web',
-  'Criador Mobile',
-  'Criador Desktop'
+  'Criador de Apps Mobile',
+  'Criador de Apps Para Computadores'
 ]
 
 export default () => {

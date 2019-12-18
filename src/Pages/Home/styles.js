@@ -12,10 +12,10 @@ export const TitleCenter = styled.h1`
   overflow: hidden !important;
 
   .h2 {
-    font-size: 1.5rem; 
+    font-size: 1rem; 
     font-weight: lighter; 
     min-width: 500px;  
-    padding-left: 2.8rem;  
+    padding-left: 1rem;  
     
     span {
       font-style: italic;
