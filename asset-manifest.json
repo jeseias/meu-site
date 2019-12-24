@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.js": "/static/js/main.4f37e7d7.chunk.js",
-    "main.js.map": "/static/js/main.4f37e7d7.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.4e64986e.js",
-    "runtime-main.js.map": "/static/js/runtime-main.4e64986e.js.map",
-    "static/js/2.96523fa2.chunk.js": "/static/js/2.96523fa2.chunk.js",
-    "static/js/2.96523fa2.chunk.js.map": "/static/js/2.96523fa2.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.a8a5157db384010f12e55963e6a8f885.js": "/precache-manifest.a8a5157db384010f12e55963e6a8f885.js",
-    "service-worker.js": "/service-worker.js",
-    "static/js/2.96523fa2.chunk.js.LICENSE": "/static/js/2.96523fa2.chunk.js.LICENSE",
-    "static/media/bg2.jpg": "/static/media/bg2.72cbc599.jpg",
-    "static/media/bg3.jpg": "/static/media/bg3.2e4bce76.jpg",
-    "static/media/bg4.jpg": "/static/media/bg4.1eca2faf.jpg",
-    "static/media/bg5.jpg": "/static/media/bg5.c8a394bb.jpg",
-    "static/media/bg6.jpg": "/static/media/bg6.ae5ab048.jpg",
-    "static/media/bg7.jpg": "/static/media/bg7.defeb651.jpg",
-    "static/media/me2.jpg": "/static/media/me2.d889c3f0.jpg"
+    "main.js": "/meu-site/static/js/main.4f37e7d7.chunk.js",
+    "main.js.map": "/meu-site/static/js/main.4f37e7d7.chunk.js.map",
+    "runtime-main.js": "/meu-site/static/js/runtime-main.5618b11c.js",
+    "runtime-main.js.map": "/meu-site/static/js/runtime-main.5618b11c.js.map",
+    "static/js/2.308c5f80.chunk.js": "/meu-site/static/js/2.308c5f80.chunk.js",
+    "static/js/2.308c5f80.chunk.js.map": "/meu-site/static/js/2.308c5f80.chunk.js.map",
+    "index.html": "/meu-site/index.html",
+    "precache-manifest.df5cbed11468a9ec84a0d548719d6408.js": "/meu-site/precache-manifest.df5cbed11468a9ec84a0d548719d6408.js",
+    "service-worker.js": "/meu-site/service-worker.js",
+    "static/js/2.308c5f80.chunk.js.LICENSE": "/meu-site/static/js/2.308c5f80.chunk.js.LICENSE",
+    "static/media/bg2.jpg": "/meu-site/static/media/bg2.72cbc599.jpg",
+    "static/media/bg3.jpg": "/meu-site/static/media/bg3.2e4bce76.jpg",
+    "static/media/bg4.jpg": "/meu-site/static/media/bg4.1eca2faf.jpg",
+    "static/media/bg5.jpg": "/meu-site/static/media/bg5.c8a394bb.jpg",
+    "static/media/bg6.jpg": "/meu-site/static/media/bg6.ae5ab048.jpg",
+    "static/media/bg7.jpg": "/meu-site/static/media/bg7.defeb651.jpg",
+    "static/media/me2.jpg": "/meu-site/static/media/me2.d889c3f0.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.4e64986e.js",
-    "static/js/2.96523fa2.chunk.js",
+    "static/js/runtime-main.5618b11c.js",
+    "static/js/2.308c5f80.chunk.js",
     "static/js/main.4f37e7d7.chunk.js"
   ]
 }
