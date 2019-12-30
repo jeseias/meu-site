@@ -5,7 +5,7 @@ import { transparentTertiaryColor } from '../../Styles/variables'
 
 export const ModalBox = styled.div`
   position: relative;
-  background: ${ props => `url(${props.item.item})` };  
+  background: ${ props => `url(${props.item.thumbnail_url})` };  
   background-size: cover;
   background-position: center;
   min-height: 300px; 

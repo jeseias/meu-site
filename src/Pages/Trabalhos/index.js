@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
+import api from '../../services/api'
+
 // Component
 import SwitchFilter from '../../Components/SwitchFilter'
 import Modal from '../../Components/Modal'
@@ -12,7 +14,7 @@ import { ContentBox } from '../../Styles/components'
 import ModalShow from '../../Components/ModalShow'
 
 // Styles
-import {MainCenteredContent} from '../../Styles/components'
+import { MainCenteredContent } from '../../Styles/components'
 import { MainTitle } from '../../Styles/typografy'
 import { Container } from './styles' 
 
@@ -25,88 +27,33 @@ export default () =>  {
     { name: 'Sites', active: false },
     { name: 'Telefone', active: false },
     { name: 'Computador', active: false }
-  ]) 
+  ])   
+ 
+  async function loadWorks() {
+    const data = await api.get('/works')
+    console.log(data.data)
+    setWorks(data.data)
+  }
 
-  // All my data
-  const work = [{
-    id: 1,
-    type: "Site",
-    name: "Meu Site",
-    what: "Sites",
-    item: "https://picsum.photos/id/1/500/400",
-    link: "#"
-  },{
-    id: 2,
-    type: "Phone",
-    name: "Gerenciamento",
-    what: "Telefone",
-    item: "https://picsum.photos/id/20/500/400",
-    link: "#"
-  },{
-    id: 3,
-    type: "Desktop",
-    name: "Jeseias Domingos",
-    what: "Computador",
-    item: "https://picsum.photos/id/30/500/400",
-    link: "#"
-  },{
-    id: 4,
-    type: "Desktop",
-    name: "James Bond",
-    what: "Computador",
-    item: "https://picsum.photos/id/40/500/400",
-    link: "#"
-  },{
-    id: 5,
-    type: "Site",
-    name: "Jason Bourne",
-    what: "Sites",
-    item: "https://picsum.photos/id/50/500/400",
-    link: "#"
-  },{
-    id: 6,
-    type: "Phone",
-    name: "JMCD",
-    what: "Telefone",
-    item: "https://picsum.photos/id/60/500/400",
-    link: "#"
-  },{
-    id: 7,
-    type: "Desktop",
-    name: "Malaquias Constantino",
-    what: "Computador",
-    item: "https://picsum.photos/id/55/500/400",
-    link: "#"
-  },{
-    id: 8,
-    type: "Phone",
-    name: "Gestao do Site",
-    what: "Telefone",
-    item: "https://picsum.photos/id/190/500/400",
-    link: "#"
-  }] 
-
-  useEffect(() => {
-    setWorks(work)
-  }, [])
+  useEffect(() => loadWorks(), [])  
 
   // This function filter the works
   const filterWorks = name => {
     switch (name) {
       case 'Todos':
-        return setWorks(work) 
+        return loadWorks()
       case 'Sites': 
-        const SiteWorks = work.filter( item => {
+        const SiteWorks = works.filter( item => {
           if (item.what === 'Sites')  return item 
         }) 
         return setWorks(SiteWorks)  
       case 'Telefone': 
-        const TelefoneWorks = work.filter( item => {
+        const TelefoneWorks = works.filter( item => {
           if (item.what === 'Telefone')  return item 
         }) 
         return setWorks(TelefoneWorks)  
       case 'Computador': 
-        const ComputadorWorks = work.filter( item => {
+        const ComputadorWorks = works.filter( item => {
           if (item.what === 'Computador')  return item 
         }) 
         return setWorks(ComputadorWorks)    
@@ -126,33 +73,31 @@ export default () =>  {
       }
     })
     setItem(newItems)  
-  }
-
+  } 
 
   const showModal = el => {
     setDisplay(!display) 
     setContent(el)
   } 
 
-return ( 
-  <Container>
-    <MainCenteredContent marginTop='4rem' width='90%'>
-      <section className="trabalhos">
-        <MainTitle> Meus Trabalhos <div id="infinity"></div> </MainTitle> 
-        
-        <SwitchFilter handleItems={(els) => handleItems(els)} items={items}/> 
-        <ModalShow content={content} display={display} showElement={(el) => showModal(el)}/>
+  return ( 
+    <Container>
+      <MainCenteredContent marginTop='4rem' width='90%'>
+        <section className="trabalhos">
+          <MainTitle> Meus Trabalhos <div id="infinity"></div> </MainTitle> 
+          
+          <SwitchFilter handleItems={(els) => handleItems(els)} items={items}/> 
+          <ModalShow content={content} display={display} showElement={(el) => showModal(el)}/>
 
-        <GridColumn3 className="modalGrid">
-          { works.map( item => 
-            <ContentBox key={item.id}>
-              <Modal work={item} showElement={el => showModal(el)}/>
-            </ContentBox> 
-          ) }
-        </GridColumn3>
-      </section>
-    </MainCenteredContent>
-  </Container>
-)
-
+          <GridColumn3 className="modalGrid">
+            { works.map( item => 
+              <ContentBox key={item.id}>
+                <Modal work={item} showElement={el => showModal(el)}/>
+              </ContentBox> 
+            ) }
+          </GridColumn3>
+        </section>
+      </MainCenteredContent>
+    </Container>
+  )
 }
