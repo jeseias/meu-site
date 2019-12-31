@@ -114,17 +114,23 @@ export const Slider = styled.div`
 export const TestimonialBox = styled.div`
   header{
     display: grid;
-    grid-template-columns: 50px auto 20%;
-    grid-template-rows: auto auto;
+    grid-template-columns: 70px auto 20%;
+    grid-template-rows: 70px auto;
     grid-gap: .3rem;
 
     .img { 
       padding: .3rem;
       border-radius: 100%;
+      background: ${props => `url(${props.bg})`};
+      background-size: cover;
+      background-position: center;
     }
 
     .info {
       color: #fff;
+      ${centerContent};
+      align-items: flex-start;
+      padding-left: 1rem;
 
       p {
         color: ${lightGray}
@@ -143,7 +149,9 @@ export const TestimonialBox = styled.div`
 
      
   }
+
   main {
+    padding-top: 1rem;
     color: #fff;
   }
 `

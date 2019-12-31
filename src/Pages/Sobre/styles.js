@@ -82,6 +82,15 @@ export const Container = styled.div`
     }
   } 
 
+  /* Testimonials */
+  .testimonials {
+    .nothing {
+      color: #fff;
+      ${centerContent};
+      padding: 5rem;
+    }
+  }
+
   /* Services */
   .services {
 

@@ -7,16 +7,16 @@ import { Container } from './styles'
 
 export default () => 
   <Container>
-     <Link to=''>
+     <a target="_blank" href='https://www.facebook.com/jeseias.constatino.33'>
       <FaFacebookF size={18}/>
-     </Link>
-     <Link to=''>
+     </a>
+     <a target="_blank" href='https://twitter.com/JeseiasD'>
       <FaTwitter size={18}/>
-     </Link>
-     <Link to=''>
+     </a>
+     <a target="_blank" href='https://www.instagram.com/jeseiasconstantino/'>
       <FaInstagram size={18}/>
-     </Link>
-     <Link to=''>
+     </a>
+     <a target="_blank" href='https://www.youtube.com/channel/UCt78TT6ClXl87xKSQ5QUliQ'>
       <FaYoutube size={18}/>
-     </Link>
+     </a>
   </Container>

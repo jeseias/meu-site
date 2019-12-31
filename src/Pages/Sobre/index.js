@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 
 import api from '../../services/api'
 
@@ -22,7 +23,7 @@ export default () =>  {
   useEffect(() => {
     async function loadClients() {
       const data = await api.get('/clients')
-      setClients(data.data)
+      setClients()
     }
     loadClients()
   }, [])
@@ -215,23 +216,32 @@ export default () =>  {
         <section className="testimonials">
           <SecondTitle> Testemunhos </SecondTitle>
           <Slider items="4" className='slider'>
-            {clients.map( client => 
-              <ContentBox>
-                <TestimonialBox>
-                  <header> 
-                    <div className="img" bg={client.thumbnail_url}></div>
-                    <div className="info">
-                      <h3 className="name">{client.name}</h3>
-                      <p>{client.work}</p>
-                    </div>
-                  </header>
-                  <div className="progress">
-                    <progress value={client.amount} max="100" />
-                    <span> {`${client.amount}%`} </span>
-                  </div>
-                </TestimonialBox>
-              </ContentBox>
-            )}  
+            { clients ?
+                clients.map( client => 
+                  <ContentBox>
+                    <TestimonialBox bg={client.thumbnail_url}>
+                      <header> 
+                        <div className="img" /> 
+                        <div className="info">
+                          <h3 className="name">{client.name}</h3>
+                          <p>{client.work}</p>
+                        </div>
+                        <div className="progress">
+                          <progress value={client.amount} max="100" />
+                          <span> {`${client.amount}%`} </span>
+                        </div>
+                      </header>
+                      <main>
+                        <p>{client.saying}</p>
+                      </main>
+                    </TestimonialBox>
+                  </ContentBox>
+                ) : 
+                <div className="nothing">
+                  <h1>Ainda não temos cliente nenhum seje o primeiro </h1>
+                  <AwesomeBTN><Link to="/contacto">Contact-me</Link></AwesomeBTN>
+                </div>
+            }  
           </Slider>
         </section>
       </MainCenteredContent>
