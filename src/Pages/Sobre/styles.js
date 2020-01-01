@@ -101,7 +101,9 @@ export const Container = styled.div`
       grid-gap: 2rem; 
       
       > * {
-        border-bottom: .2rem solid ${tertiaryColor}
+        border-bottom: .2rem solid ${tertiaryColor};
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
       }
     }
 

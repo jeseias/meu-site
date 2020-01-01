@@ -23,15 +23,15 @@ export default () =>  {
   useEffect(() => {
     async function loadClients() {
       const data = await api.get('/clients')
-      setClients()
-    }
+      setClients(data.data)
+    } 
     loadClients()
   }, [])
 
   return ( 
     <Container>
       <MainCenteredContent marginTop='4rem' width='90%'>
-        <section className="aboutMe">
+        <section className="aboutMe"> 
           <MainTitle>
             Sobre Me 
             <div id="infinity"></div> 
