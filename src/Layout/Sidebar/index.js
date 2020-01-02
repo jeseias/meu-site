@@ -15,11 +15,11 @@ export default () => {
   const [showMenuItems, setMenu] = useState(false) 
 
   const [links] = useState([
-    { name: 'Início', icon: 0, active: true, to: '/' },
-    { name: 'Sobre', icon: 1, active: false, to: '/sobre' },
-    { name: 'Resumo', icon: 2, active: false, to: '/resumo' },
-    { name: 'Trabalhos', icon: 3, active: false, to: '/trabalhos' },
-    { name: 'Contacto', icon: 4, active: false, to: '/contacto' }
+    { name: 'Início', icon: 0, to: '/' },
+    { name: 'Sobre', icon: 1, to: '/sobre' },
+    { name: 'Resumo', icon: 2, to: '/resumo' },
+    { name: 'Trabalhos', icon: 3, to: '/trabalhos' },
+    { name: 'Contacto', icon: 4, to: '/contacto' }
   ])
   const icons = [<FaHome size={32}className='icon'/>,<FaUserTie size={32}className='icon'/>,<FaAddressBook size={32}className='icon'/>,
   <FaBriefcase size={32}className='icon'/>,<MdMail size={32}className='icon'/> ]    
@@ -38,8 +38,7 @@ export default () => {
           <ul> 
             {links.map( link =>
               <Link to={ link.to } 
-                key={ link.icon } 
-                className={ link.active ? 'active' : '' } 
+                key={ link.icon }  
                 onClick={ () => setMenu(!showMenuItems) }
               >
                 { icons[link.icon] }
