@@ -15,7 +15,7 @@ export const Sidebar = styled.aside`
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 100;  
+  z-index: 100; 
 
   *:not(main) {
     ${centerContent}
@@ -60,6 +60,12 @@ export const Sidebar = styled.aside`
           z-index: 1;
           opacity: 1;
         }
+
+        &.active {
+          .icon {
+            color: ${tertiaryColor};
+          }
+        }
       }
     }
   }
@@ -75,8 +81,7 @@ export const Sidebar = styled.aside`
     background: ${secondaryColor};
     width: 55px;
     ${smoothTransition};
-    z-index: 100; 
-    overflow-y: scroll;
+    z-index: 100;  
 
     &.show {
       transform: translateX(0);

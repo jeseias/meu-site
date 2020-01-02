@@ -30,12 +30,17 @@ export default () =>  {
   ])   
  
   async function loadWorks() {
-    const data = await api.get('/works')
-    console.log(data.data)
+    const data = await api.get('/works') 
     setWorks(data.data)
   }
 
-  useEffect(() => loadWorks(), [])  
+  useEffect(() => {
+    async function loadWorksOnce() {
+      const data = await api.get('/works') 
+      setWorks(data.data)
+    }
+    loadWorksOnce()
+  }, [])  
 
   // This function filter the works
   const filterWorks = name => {

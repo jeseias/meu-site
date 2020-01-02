@@ -218,7 +218,7 @@ export default () =>  {
           <Slider items="4" className='slider'>
             { clients ?
                 clients.map( client => 
-                  <ContentBox>
+                  <ContentBox key={client._id}>
                     <TestimonialBox bg={client.thumbnail_url}>
                       <header> 
                         <div className="img" /> 
