@@ -22,79 +22,52 @@ export default () =>
             <SecondTitle> Experiença </SecondTitle>
             <ContentBox>
               <InfoBox>
-                <h2>Desenvolvimento Web</h2>
+                <h2>Awesomedone</h2>
                 <span> 
-                  <FaCalendarAlt size={16}/> 2012 - 2014 | Centro Jeseias
+                  <FaCalendarAlt size={16}/> 2019 - 2020 | Startup AwesomeDone
                 </span>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium magnam eius ea.
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur eum ea quis.
+                <p>         
+                  Co-fundador da empresa Awesomedone, líder de uma das equipas de programadores.
                 </p>
               </InfoBox>
             </ContentBox>
             <ContentBox>
               <InfoBox>
-                <h2>Frontend-end Developer</h2>
+                <h2>SPCENTER</h2>
                 <span> 
-                  <FaCalendarAlt size={16}/> 2012 - 2014 | Centro Jeseias
+                  <FaCalendarAlt size={16}/> 2012 | Centro SPCENTER
                 </span>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium magnam eius ea.
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur eum ea quis.
+                  Trabalhei como programador web e desktop. Especilizado desenvolvimento em frontend.
                 </p>
               </InfoBox>
-            </ContentBox>
-            <ContentBox>
-              <InfoBox>
-                <h2>backend-developer</h2>
-                <span> 
-                  <FaCalendarAlt size={16}/> 2012 - 2014 | Centro Jeseias
-                </span>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium magnam eius ea.
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur eum ea quis.
-                </p>
-              </InfoBox>
-            </ContentBox>
+            </ContentBox> 
           </div>
           <div className="education">
             <SecondTitle> Educação </SecondTitle>
             <ContentBox>
               <InfoBox>
-                <h2>Desenvolvimento Web</h2>
+                <h2>Amazing Kids Private School and Academy</h2>
                 <span> 
-                  <FaCalendarAlt size={16}/> 2012 - 2014 | Centro Jeseias
+                  <FaCalendarAlt size={16}/> 2008 - 2015 | AKPS
                 </span>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium magnam eius ea.
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur eum ea quis.
+                  Colegio maravilhoso esta na lista dos melhores colegios de africa, onde aprendi e o meu inglês.
                 </p>
               </InfoBox>
             </ContentBox>
             <ContentBox>
               <InfoBox>
-                <h2>Frontend-end Developer</h2>
+                <h2>Colegio Pitruca</h2>
                 <span> 
-                  <FaCalendarAlt size={16}/> 2012 - 2014 | Centro Jeseias
+                  <FaCalendarAlt size={16}/> 2015 - 2019 | Pitruca
                 </span>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium magnam eius ea.
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur eum ea quis.
+                  A minha jornada como programador verdadeiro começou neste colegio, juntamente com os colegas
+                  da classe superior.
                 </p>
               </InfoBox>
-            </ContentBox>
-            <ContentBox>
-              <InfoBox>
-                <h2>backend-developer</h2>
-                <span> 
-                  <FaCalendarAlt size={16}/> 2012 - 2014 | Centro Jeseias
-                </span>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium magnam eius ea.
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur eum ea quis.
-                </p>
-              </InfoBox>
-            </ContentBox>
+            </ContentBox> 
           </div>
         </GridColumn2>
      </section>
@@ -134,6 +107,10 @@ export default () =>
               <progress value="74" max="100" />
               <span> NodeJS 74% </span>
             </div>
+            <div className="progress">
+              <progress value="83" max="100" />
+              <span> Inglês 83% </span>
+            </div>
           </ContentBox>
         </GridColumn2>
       </section>
@@ -148,33 +125,34 @@ export default () =>
               <h3>Base de Dado</h3>
               <h3>Backend</h3>
               <p>
-                Fazer um setup de um servidor e a sua base de dado para funcionamento online
+                Fazer o setup de um servidor e a sua base de dado, criando uma e a sua API, para ser consumida.
               </p>
             </SpecificBox>
             <SpecificBox>
               <h3>Criação de Site</h3>
-              <h3>Backend</h3>
+              <h3>Web</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam sunt temporibus eum.
+                Sites completamento responsivos, detalhados, harmonia de cores.
               </p>
             </SpecificBox>
           </div>
           <div className="middle">
             <h2> FULLSTACK</h2>
+            <p> Programador que mexe com tudo.</p>
           </div>
           <div className="right">
             <SpecificBox>
-              <h3>Aplicativos para (<b>Andriod</b> e <b>IOS</b>)</h3>
-              <h3>Frontend</h3>
+              <h3>Aplicativos para smartphone</h3>
+              <h3>Mobile</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam sunt temporibus eum.
+                Funcionamento em Android e IOS, com perfomance inacrtitavel.
               </p>
             </SpecificBox>
             <SpecificBox>
-              <h3>Aplicativos Desktop (Todos sistemas operativos)</h3>
-              <h3>Backend</h3>
+              <h3>Aplicativos Desktop</h3>
+              <h3>Desktop</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam sunt temporibus eum.
+                Para sistemas operativos Linux, Windows e Mac, aplicativos de gerenciamento de dados.
               </p>
             </SpecificBox>
           </div>
@@ -190,28 +168,28 @@ export default () =>
           <h1> 001 </h1>
           <h2> Descução de ideias </h2>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium saepe obcaecati quasi.
+            Com caneta e papel, traçamos todas as ideias e colomos-as em alvos.
           </p>
         </ContentBox>
         <ContentBox className="right">
           <h1> 002 </h1>
-          <h2> Descução de ideias </h2>
+          <h2> Conceito criativo </h2>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium saepe obcaecati quasi.
+            Desenvolvemento do plano e criação algoritimos e soluções.
           </p>
         </ContentBox>
         <ContentBox>
           <h1> 003 </h1>
-          <h2> Descução de ideias </h2>
+          <h2> Mão na massa  </h2>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium saepe obcaecati quasi.
+            Momento de transformar o sonho em uma realidade
           </p>
         </ContentBox>
         <ContentBox className="right">
           <h1> 004 </h1>
-          <h2> Descução de ideias </h2>
+          <h2> Entrega  </h2>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium saepe obcaecati quasi.
+            Depois de varias avaliações e testes, clientes feliz, publicamos.
           </p>
         </ContentBox> 
       </Grid2Column4>

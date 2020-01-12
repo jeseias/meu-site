@@ -49,16 +49,16 @@ export default () =>  {
               <p className="information">
                 Olá, sou um programador. Especializado em programção web. Estou aqui cheio de vontande para ajudar,
                 empresas como a sua a crescer para o proximo nivel. Estamos <b>no secúlo 21</b> , e é uma <b>obrigação</b>,
-                toda empresa ter um site, não importa a natureza do mesmo. Seja ela um restaurante, produtora, colegio, oficina,
+                toda empresa ter um site, não importa a natureza da mesmo. Seja ela um restaurante, produtora, colegio, oficina,
                 studio, salão de beleza, uma botique ou até mesmo podes ser um trabalhador autonomo como eu, um site também 
                 ficaria bem para se.
               </p>
               <p className="information">
                 1. Gastarias pouco dinheiro em questão de marketing, porque um site faz isto perfeitamente. Não importa onde
-                estejá os seus clientes. Porque ele é um elemento <b>Digital Global</b>. <br />
+                estejá os teus clientes. Porque ele é um elemento <b>Digital Global</b>. <br />
                 2. Muito mais clientes para o seu negócio, mais <b>1 milhões</b> de angolanos têm acceso a <b>internet</b>, e eles 
                 <b> consomen</b> o seu produto, vendo na internet, <b>certamente</b> eles <b>virão</b>. <br />
-                3. Mais <b></b>peso para sua empresa. Tento em conta que não é qualquer empresa que possue um site, neste mercado
+                3. Mais <b></b>peso para sua empresa. Tendo em conta que não é qualquer empresa que possue um site, neste mercado
                 competivo, só <b></b> probabilidade de você <b>perder</b>.
               </p>
             </div>
