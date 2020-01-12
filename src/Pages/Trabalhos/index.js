@@ -49,17 +49,20 @@ export default () =>  {
         return loadWorks()
       case 'Sites': 
         const SiteWorks = works.filter( item => {
-          if (item.what === 'Sites')  return item 
+          if (item.what === 'Sites')  return item
+          return null 
         }) 
         return setWorks(SiteWorks)  
       case 'Telefone': 
         const TelefoneWorks = works.filter( item => {
           if (item.what === 'Telefone')  return item 
+          return null
         }) 
         return setWorks(TelefoneWorks)  
       case 'Computador': 
         const ComputadorWorks = works.filter( item => {
           if (item.what === 'Computador')  return item 
+          return null
         }) 
         return setWorks(ComputadorWorks)    
       default:

@@ -124,7 +124,7 @@ export default () =>
           <ContentBox>
             <div className="progress">
               <progress value="74" max="100" />
-              <span> NodeJS 74% </span>
+              <span> ReactNative 74% </span>
             </div>
             <div className="progress">
               <progress value="61" max="100" />
@@ -148,7 +148,7 @@ export default () =>
               <h3>Base de Dado</h3>
               <h3>Backend</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam sunt temporibus eum.
+                Fazer um setup de um servidor e a sua base de dado para funcionamento online
               </p>
             </SpecificBox>
             <SpecificBox>

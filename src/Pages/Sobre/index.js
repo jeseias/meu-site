@@ -14,8 +14,8 @@ import me from '../../assets/sobre/me2.jpg'
 
 // Icons
 import {FaMapMarkedAlt,FaAward,FaCertificate,FaUserAstronaut,FaMusic,FaLocationArrow,
-        FaCameraRetro,FaGuitar,FaSpaceShuttle,FaBook,FaLaptop,FaTree,FaDesktop,FaCogs,FaNotesMedical } from 'react-icons/fa'
-import {MdSmartphone} from 'react-icons/md'        
+        FaCameraRetro,FaGuitar,FaSpaceShuttle,FaBook,FaLaptop,FaTree,FaDesktop } from 'react-icons/fa'
+import {MdSmartphone,MdWebAsset, MdWeb} from 'react-icons/md'        
 
 export default () =>  {
   const [clients, setClients] = useState([])
@@ -47,13 +47,19 @@ export default () =>  {
                 <span>Luanda, Angola</span>
               </p>
               <p className="information">
-                Ola! Eu sou o Jeseías Domingos, so um autodidata & melhor aluno de programação do meu colegio &
-                desenvolvedor com mais de 1 ano de experiença. Eu começei no meu quarto e ganhei mas experiença
-                na empresa SPCENTER. Agora eu trabalho para me mesmo, e aproveitando a vida como uma aguia a voar. 
+                Olá, sou um programador. Especializado em programção web. Estou aqui cheio de vontande para ajudar,
+                empresas como a sua a crescer para o proximo nivel. Estamos <b>no secúlo 21</b> , e é uma <b>obrigação</b>,
+                toda empresa ter um site, não importa a natureza do mesmo. Seja ela um restaurante, produtora, colegio, oficina,
+                studio, salão de beleza, uma botique ou até mesmo podes ser um trabalhador autonomo como eu, um site também 
+                ficaria bem para se.
               </p>
               <p className="information">
-                Eu tenho alguns hobbies mais eu gosto de viajar. Ir ver a natureza, o mar e as avores. Programar 
-                é algum que tenho que fazer mesmo todos os dias. Tocar o violão deve fazer lo de forma religiosa
+                1. Gastarias pouco dinheiro em questão de marketing, porque um site faz isto perfeitamente. Não importa onde
+                estejá os seus clientes. Porque ele é um elemento <b>Digital Global</b>. <br />
+                2. Muito mais clientes para o seu negócio, mais <b>1 milhões</b> de angolanos têm acceso a <b>internet</b>, e eles 
+                <b> consomen</b> o seu produto, vendo na internet, <b>certamente</b> eles <b>virão</b>. <br />
+                3. Mais <b></b>peso para sua empresa. Tento em conta que não é qualquer empresa que possue um site, neste mercado
+                competivo, só <b></b> probabilidade de você <b>perder</b>.
               </p>
             </div>
             <div className="group">
@@ -63,7 +69,7 @@ export default () =>  {
                     <FaAward size={50}/>
                   </div>
                   <div className="details">
-                    <p>4 Anos de trabalhos</p>
+                    <p>{ `${new Date().getFullYear() - 2017}` } Anos de trabalho</p>
                     <span>Experiença</span>
                   </div>
                 </Tags>
@@ -86,7 +92,7 @@ export default () =>  {
                   </div>
                 </Tags>
                 <AwesomeBTN>
-                  Entre em Contacto
+                  <Link to='/contacto'>Entre em Contacto</Link>
                 </AwesomeBTN>
               </GridColumn4>
             </div>
@@ -169,22 +175,22 @@ export default () =>  {
             <ContentBox>
               <Servicebox>
                 <div className="icon">
-                  <FaDesktop size={40}/>
+                  <MdWebAsset size={40}/>
                 </div>
-                <h3>Design</h3>
+                <h3>Criação de sites</h3>
                 <p>
-                  Fazemos design de panfletos, cartaz, design web tambem.
+                  Sites Informativos, Lojas Virtuais, Dinamicos, etc.
                 </p>
               </Servicebox>
             </ContentBox>
             <ContentBox>
               <Servicebox>
                 <div className="icon">
-                  <FaCogs size={40}/>
+                  <FaDesktop size={40}/>
                 </div>
-                <h3>Desenvolvimento</h3>
+                <h3>Aplicativos de Computadores</h3>
                 <p>
-                  Fazemos design de panfletos, cartaz, design web tambem.
+                  Sistemas de gestão, aplicativos personalizados. Para todos sistemas operacionais
                 </p>
               </Servicebox>
             </ContentBox> 
@@ -193,20 +199,20 @@ export default () =>  {
                 <div className="icon">
                   <MdSmartphone size={40}/>
                 </div>
-                <h3>Design Reponsivos</h3>
+                <h3>Aplicativos de Telefone</h3>
                 <p>
-                  Fazemos design de panfletos, cartaz, design web tambem.
+                  Aplicativo de emcomenda, chates para grupo e empresas 
                 </p>
               </Servicebox>
             </ContentBox>
             <ContentBox>
               <Servicebox>
                 <div className="icon">
-                  <FaNotesMedical size={40}/>
+                  <MdWeb size={40}/>
                 </div>
-                <h3>Supporte Rapido</h3>
+                <h3>Design</h3>
                 <p>
-                  Fazemos design de panfletos, cartaz, design web tambem.
+                  Criação de panfletos, cartaz e media digital
                 </p>
               </Servicebox>
             </ContentBox>
