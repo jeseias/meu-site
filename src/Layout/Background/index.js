@@ -47,6 +47,7 @@ export default () => {
       <Sidebar />
       <Sideicons />
       <Route exact path='/' component={Homepage}/>
+      <Route exact path='/meu-site' component={Homepage}/>
       <Route path='/sobre' component={Sobrepage}/>
       <Route path='/resumo' component={Resumepage}/>
       <Route path='/trabalhos' component={Trabalhospage}/>
